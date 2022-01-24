@@ -95,14 +95,15 @@
                         <div class="title-heading margin-top-100">
                             <h1 class="display-4 fw-bold mb-3">This is <span class="text-primary">Rebus Pro</span></h1>
                             <p class="para-desc mx-auto text-muted">
-                                ...the perfect solution for serious Rebus users. <br/>
-                                ✉ Type your email below and hit the button to get in touch. ✉
+                                ...the perfect solution for serious 
+                                <a href="https://github.com/rebus-org" target="_blank">Rebus</a> users. <br/>
+                                ✉ Type your email below 👇 and hit the button to get in touch. ✉
                             </p>
                             <div class="col-lg-7 col-md-10 mx-auto">
                                 <div class="text-center subcribe-form mt-4 pt-2 position-relative">
                                     <form>
                                         <div class="form-group mb-0">
-                                            <input type="email" id="email" name="email" class="rounded-pill shadow" placeholder="Your email">
+                                            <input type="email" id="email" name="email" class="rounded-pill shadow" placeholder="you@wherever.com">
                                             <button type="submit" class="btn btn-pills btn-primary">Get in touch</button>
                                         </div>
                                     </form><!--end form-->
@@ -207,7 +208,11 @@
                                 Fleet Manager
                             </h2>
                             <p>
-                                Fleet Manager is the perfect tool to aid DevOps teams in running their Rebus-based workloads. 🚌
+                                Fleet Manager is the software you'll get access to through your Rebus Pro subscription. <br/>
+                                It is the perfect tool to aid DevOps teams in running their Rebus-based workloads. 🚌 
+                            </p>
+                            <p>
+                                With Fleet Manager you can
                             </p>
                         </div>
                     </div><!--end col-->
@@ -221,7 +226,6 @@
                                     <!--<i class="uim uim-signal-alt-3"></i>-->
                                     📈
                                     <img src="images/shape-1.png" class="avatar avatar-small icon-shape" alt="">
-                                    
                                 </div>
                                 <div class="content mt-4">
                                     <h5><a href="javascript:void(0)" class="title text-dark">Collect Metrics</a></h5>
@@ -229,7 +233,9 @@
                                         Fleet Manager <strong>collects metrics</strong> from each Rebus instance, visualizing the 
                                         <strong>amount of work</strong> performed by each instance or grouped by queue name or machine name.
                                     </p>
-                                    <a href="javascript:void(0)" class="text-primary">Read More <i data-feather="chevron-right" class="fea icon-sm"></i></a>
+                                    <a href="#whats-cooking" class="text-primary">
+                                        Read More <i data-feather="chevron-right" class="fea icon-sm"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -249,7 +255,9 @@
                                         Fleet Manager <strong>replaces dead-letter queues</strong>, so failed messages are centrally stored. Inspect
                                         message bodies, exception details, and <strong>re-deliver them to any queue</strong> without leaving Fleet Manager!
                                     </p>
-                                    <a href="javascript:void(0)" class="text-primary">Read More <i data-feather="chevron-right" class="fea icon-sm"></i></a>
+                                    <a href="#failed-messages-list" class="text-primary">
+                                        Read More <i data-feather="chevron-right" class="fea icon-sm"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -264,12 +272,14 @@
                                     <img src="images/shape-1.png" class="avatar avatar-small icon-shape" alt="">
                                 </div>
                                 <div class="content mt-4">
-                                    <h5><a href="javascript:void(0)" class="title text-dark">Advanced Debugging</a></h5>
+                                    <h5><a href="javascript:void(0)" class="title text-dark">Ease Debugging</a></h5>
                                     <p class="text-muted">
                                         Messaging-based systems are often harder to debug. Fleet Manager helps developers get valuable insights
                                         by recording and visualizing saga state changes and optionally enabling message auditing.
                                     </p>
-                                    <a href="javascript:void(0)" class="text-primary">Read More <i data-feather="chevron-right" class="fea icon-sm"></i></a>
+                                    <a href="#advanced-debugging" class="text-primary">
+                                        Read More <i data-feather="chevron-right" class="fea icon-sm"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -316,6 +326,8 @@
                 </div><!--end row-->
             </div><!--end container-->
 
+            <div class="container" id="whats-cooking"></div>
+
             <div class="container mt-100 mt-60">
                 <div class="row align-items-center">
                     <div class="col-md-6">
@@ -355,6 +367,8 @@
                 </div><!--end row-->
             </div><!--end container-->
 
+            <div class="container" id="failed-messages-list"></div>
+
             <div class="container mt-100 mt-60">
                 <div class="row align-items-center">
                     <div class="col-md-6 order-1 order-md-2">
@@ -380,7 +394,7 @@
                                 <li class="mt-2">
                                     <i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>
                                     <strong>Tag/untag messages</strong> to implement a simple workflow around how they should be handled (e.g. by tagging
-                                    a bunch of them with <code>Retry when BUG123 has been fixed</code>)
+                                    a bunch of them with <code>🏁 Retry when BUG123 has been fixed</code>)
                                 </li>
                                 <li class="mt-2">
                                     <i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>
@@ -475,6 +489,50 @@
                 </div><!--end row-->
             </div><!--end container-->
         
+            <div class="container" id="advanced-debugging"></div>
+
+            <div class="container mt-100 mt-60">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="feature position-relative">
+                            <img src="images/fleet-manager-14.png" class="img-fluid" alt="">
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title">
+                            <h5 class="title mb-4">
+                                Debug your sagas
+                            </h5>
+                            <p class="text-muted para-desc">
+                                Saga state snapshots are stored in Fleet Manager, making is possible to browse through
+                                all of the recorded revisions of each saga instance.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="mt-2">
+                                    <i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>
+                                    <strong>What triggered a state change?</strong> 
+                                    See which message type caused the saga to become a specific revision.
+                                </li>
+                                <li class="mt-2">
+                                    <i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>
+                                    <strong>What happened?</strong> 
+                                    Any previous revision can be inspected, helping developers understand why some particular thing happened.
+                                </li>
+                                <li class="mt-2">
+                                    <i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>
+                                    <strong>What will happen next?</strong> 
+                                    A snapshot of the saga's current state can help developers predict what will happen next.
+                                </li>
+                            </ul>
+                            <div class="mt-4">
+                                <!--<a href="javascript:void(0)" class="btn btn-primary">Get Started</a>-->
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
         </section><!--end section-->
         <!-- Features End -->
 
@@ -485,116 +543,163 @@
                 <div class="row justify-content-center">
                     <div class="col-12">
                         <div class="section-title text-center mb-4 pb-2">
-                            <h4 class="title mb-4">Our Pricing Plans</h4>
-                            <p class="text-muted para-desc mx-auto mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap 5 html page.</p>
+                            <h2 class="text-primary font-weight-normal mb-3">
+                                Available pricing plans
+                            </h2>
+                            <p class="text-muted para-desc mx-auto mb-0">
+                                Become a Rebus Pro subscriber now and take your Rebus experience to the next level.
+                            </p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentfrequency" id="paymentfrequency_monthly">
+                            <label class="form-check-label" for="paymentfrequency_monthly">
+                              Monthly
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentfrequency" id="paymentfrequency_quarterly">
+                            <label class="form-check-label" for="paymentfrequency_quarterly">
+                              Quarterly (8% discount)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentfrequency" id="paymentfrequency_biannually" checked>
+                            <label class="form-check-label" for="paymentfrequency_biannually">
+                              Every 6 months (20% discount)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
 
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                         <div class="pricing text-center rounded overflow-hidden shadow">
                             <div class="price-header bg-dark pt-5 pb-5">
-                                <h5 class="price-title text-white">Starter</h5>
-                                <p class="mb-0 text-white-50">Suitable for Starter</p>
+                                <h5 class="price-title text-white">Trial</h5>
+                                <p class="mb-0 text-white-50">Just looking</p>
                             </div>
                             <div class="d-flex justify-content-center bg-light border-bottom py-4">
-                                <span class="h6 mb-0">$</span>
-                                <span class="price h4 mb-0 ms-1">0.00</span>
+                                <span class="h6 mb-0">DKK</span>
+                                <span class="price h4 mb-0 ms-1">0,-</span>
                                 <span class="h6 align-self-end mb-1">/mo</span>
                             </div>
                             <div class="pricing-features text-start">
                                 <ul class="feature list-unstyled py-4 p-3 mb-0">
-                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>Full Access</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>Enhanced Security</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>Source Files</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>1 Domain Free</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>Free Appointments</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>Free Installment</li>
+                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>
+                                        Fleet Manager TEST access
+                                    </li>
                                 </ul>
                                 <div class="border-top text-center py-4">
-                                    <a href="javascript:void(0)" class="btn btn-dark">Free Signup</a>                                        
+                                    <a href="#contact-form" class="btn btn-dark">Signup</a>                                        
                                 </div>
                             </div>    
                         </div><!--end price three-->
                     </div><!--end col-->
-                    
-                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-                        <div class="pricing text-center rounded overflow-hidden shadow">
-                            <div class="price-header bg-dark pt-5 pb-5">
-                                <h5 class="price-title text-white">Professional</h5>
-                                <p class="mb-0 text-white-50">Suitable for Regular</p>
-                            </div>
-                            <div class="d-flex justify-content-center bg-light border-bottom py-4">
-                                <span class="h6 mb-0">$</span>
-                                <span class="price h4 mb-0 ms-1">9.99</span>
-                                <span class="h6 align-self-end mb-1">/mo</span>
-                            </div>
-                            <div class="pricing-features text-start">
-                                <ul class="feature list-unstyled py-4 p-3 mb-0">
-                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>Full Access</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>Enhanced Security</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>Source Files</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>1 Domain Free</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>Free Appointments</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>Free Installment</li>
-                                </ul>
-                                <div class="border-top text-center py-4">
-                                    <a href="javascript:void(0)" class="btn btn-dark">Subscribe Now</a>                                        
-                                </div>
-                            </div>    
-                        </div><!--end price three-->
-                    </div><!--end col-->
-                    
+
                     <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                         <div class="pricing text-center rounded overflow-hidden shadow-lg bg-light">
                             <div class="price-header bg-primary pt-5 pb-5">
-                                <h5 class="price-title text-white">Standerd</h5>
-                                <p class="mb-0 text-light">Suitable for Business</p>
+                                <h5 class="price-title text-white">Starter</h5>
+                                <p class="mb-0 text-light">Suitable for most business</p>
                             </div>
-                            <div class="d-flex justify-content-center bg-light border-bottom py-5">
-                                <span class="h6 mb-0">$</span>
-                                <span class="price h4 mb-0 ms-1">19.99</span>
+                            <div class="d-flex justify-content-center bg-light border-bottom py-4">
+                                <span class="h6 mb-0">DKK</span>
+                                <span class="price h4 mb-0 ms-1">2500,-</span>
                                 <span class="h6 align-self-end mb-1">/mo</span>
                             </div>
                             <div class="pricing-features text-start">
                                 <ul class="feature list-unstyled py-4 p-3 mb-0">
-                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-primary me-2"></i>Full Access</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-primary me-2"></i>Enhanced Security</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-primary me-2"></i>Source Files</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-primary me-2"></i>1 Domain Free</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-primary me-2"></i>Free Appointments</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-primary me-2"></i>Free Installment</li>
+                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>
+                                        Support agreement
+                                    </li>
+                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>
+                                        Fleet Manager
+                                    </li>
+                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>
+                                        Private Slack channel
+                                    </li>
+                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>
+                                        10 GB monthly quota
+                                    </li>
                                 </ul>
-                                <div class="border-top text-center py-5">
-                                    <a href="javascript:void(0)" class="btn btn-primary">Buy Now</a>                                        
+                                <div class="border-top text-center py-4">
+                                    <a href="#contact-form" class="btn btn-dark">Signup</a>                                        
                                 </div>
                             </div>    
                         </div><!--end price three-->
                     </div><!--end col-->
-                    
+
                     <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                         <div class="pricing text-center rounded overflow-hidden shadow">
                             <div class="price-header bg-dark pt-5 pb-5">
-                                <h5 class="price-title text-white">Premium</h5>
-                                <p class="mb-0 text-white-50">Suitable for Premium</p>
+                                <h5 class="price-title text-white">Next Level</h5>
+                                <p class="mb-0 text-white-50">Business with lots of activity</p>
                             </div>
                             <div class="d-flex justify-content-center bg-light border-bottom py-4">
-                                <span class="h6 mb-0">$</span>
-                                <span class="price h4 mb-0 ms-1">29.99</span>
+                                <span class="h6 mb-0">DKK</span>
+                                <span class="price h4 mb-0 ms-1">3500,-</span>
                                 <span class="h6 align-self-end mb-1">/mo</span>
                             </div>
                             <div class="pricing-features text-start">
                                 <ul class="feature list-unstyled py-4 p-3 mb-0">
-                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>Full Access</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>Enhanced Security</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>Source Files</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>1 Domain Free</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>Free Appointments</li>
-                                    <li class="feature-list text-muted mt-2"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>Free Installment</li>
+                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>
+                                        Support agreement
+                                    </li>
+                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>
+                                        Fleet Manager
+                                    </li>
+                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>
+                                        Private Slack channel
+                                    </li>
+                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>
+                                        20 GB monthly quota
+                                    </li>
                                 </ul>
                                 <div class="border-top text-center py-4">
-                                    <a href="javascript:void(0)" class="btn btn-dark">Buy Premium</a>                                        
+                                    <a href="#contact-form" class="btn btn-dark">Signup</a>                                        
+                                </div>
+                            </div>    
+                        </div><!--end price three-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                        <div class="pricing text-center rounded overflow-hidden shadow">
+                            <div class="price-header bg-dark pt-5 pb-5">
+                                <h5 class="price-title text-white">Enterprise</h5>
+                                <p class="mb-0 text-white-50">Custom quote</p>
+                            </div>
+                            <div class="d-flex justify-content-center bg-light border-bottom py-4">
+                                <span class="h6 mb-0">DKK</span>
+                                <span class="price h4 mb-0 ms-1">?</span>
+                                <span class="h6 align-self-end mb-1">/mo</span>
+                            </div>
+                            <div class="pricing-features text-start">
+                                <ul class="feature list-unstyled py-4 p-3 mb-0">
+                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>
+                                        Support agreement
+                                    </li>
+                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>
+                                        Fleet Manager
+                                    </li>
+                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>
+                                        Private Slack channel
+                                    </li>
+                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>
+                                        ?? GB monthly quota
+                                    </li>
+                                    <li class="feature-list text-muted"><i data-feather="arrow-right-circle" class="fea icon-sm text-dark me-2"></i>
+                                        Rebus swag pack
+                                    </li>
+                                </ul>
+                                <div class="border-top text-center py-4">
+                                    <a href="#contact-form" class="btn btn-dark">Signup</a>                                        
                                 </div>
                             </div>    
                         </div><!--end price three-->
@@ -962,5 +1067,17 @@
         <script src="js/tiny-slider-init.js "></script>
         <!-- Main Js -->
         <script src="js/app.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+        <script>
+/*             document.addEventListener("DOMContentLoaded", function(event) {
+              let elem = document.getElementById("email");
+              
+              setTimeout(function() {
+                elem.focus();
+              }, 1000);
+            });
+ */        </script>
     </body>
 </html>
