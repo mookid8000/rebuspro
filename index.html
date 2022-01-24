@@ -1292,6 +1292,11 @@
                     e.preventDefault();
 
                     let email = $("#simple-email").val();
+                    if (email.length < 3) {
+                        alert("Please type your email");
+                        $("#simple-email").focus();
+                        return;
+                    }
 
                     sendEmail("No name", email, "REBUS PRO: Quick-contact", "Please get back to me regarding Rebus Pro", function() {
                         $("#simple-email").val("");
@@ -1302,7 +1307,19 @@
                     e.preventDefault();
 
                     let name = $("#name").val();
+                    if (name.length < 1) {
+                        alert("Please type your name");
+                        $("#name").focus();
+                        return;
+                    }
+
                     let email = $("#email").val();
+                    if (email.length < 3) {
+                        alert("Please type your email");
+                        $("#email").focus();
+                        return;
+                    }
+
                     let subject = $("#subject").val();
                     let comments = $("#comments").val();
 
