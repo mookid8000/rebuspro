@@ -21,6 +21,15 @@
         <link href="css/style.css" rel="stylesheet" type="text/css" />
     </head>
 
+    <style >
+        .code-sample {
+            color: #c1f2cf;
+            background-color: #1f1822;
+            padding: 0.2em;
+            font-size: 1.2em;
+        }
+    </style>
+
     <body>
         <!-- Navbar STart -->
         <header id="topnav" class="defaultscroll sticky">
@@ -28,11 +37,13 @@
                 <!-- Logo container-->
                 <div>
                     <a class="logo" href="index.html">
-                        <img src="images/logo3-320.png" height="22" alt="">
+                        <img src="images/logo3-320.png" height="30" alt="">
                     </a>
                 </div>                 
-                <div class="buy-button">
-                    <a href="javascript:void(0)" class="btn btn-primary">Signup</a>
+                <div class="buy-button" style="padding:0">
+                    <a href="https://manager.rebus.fm" target="_blank" class="btn btn-primary">
+                        <img src="images/fmlogo.png" height="30">
+                    </a>
                 </div><!--end login button-->
                 <!-- End Logo container-->
                 <div class="menu-extras">
@@ -53,10 +64,10 @@
                     <!-- Navigation Menu-->   
                     <ul class="navigation-menu" id="navmenu-nav">
                         <li class="has-submenu">
-                            <a href="#home">Home</a>
+                            <a href="#home">Rebus Pro</a>
                         </li>
                         <li class="has-submenu">
-                            <a href="#service">Services</a>
+                            <a href="#fleet-manager">Fleet Manager</a>
                         </li>
                         <li class="has-submenu">
                             <a href="#pricing">Pricing</a>
@@ -84,14 +95,15 @@
                         <div class="title-heading margin-top-100">
                             <h1 class="display-4 fw-bold mb-3">This is <span class="text-primary">Rebus Pro</span></h1>
                             <p class="para-desc mx-auto text-muted">
-                                ...the perfect solution for serious Rebus users.
+                                ...the perfect solution for serious Rebus users. <br/>
+                                ✉ Type your email below and hit the button to get in touch. ✉
                             </p>
                             <div class="col-lg-7 col-md-10 mx-auto">
                                 <div class="text-center subcribe-form mt-4 pt-2 position-relative">
                                     <form>
                                         <div class="form-group mb-0">
-                                            <input type="email" id="email" name="email" class="rounded-pill shadow" placeholder="Your Email Id">
-                                            <button type="submit" class="btn btn-pills btn-primary">Subscribe Now</button>
+                                            <input type="email" id="email" name="email" class="rounded-pill shadow" placeholder="Your email">
+                                            <button type="submit" class="btn btn-pills btn-primary">Get in touch</button>
                                         </div>
                                     </form><!--end form-->
                                 </div><!--end subscribe form-->
@@ -99,7 +111,8 @@
                         </div>
 
                         <div class="home-dashboard">
-                            <img src="images/saas/saas-2.png" alt="" style="z-index: -1;" class="img-fluid">
+                            <!-- <img src="images/saas/saas-2.png" alt="" style="z-index: -1;" class="img-fluid"> -->
+                            <img src="images/screenshots2.png" alt="" style="z-index: -1;" class="img-fluid">
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -110,6 +123,13 @@
         <section class="py-4 bg-light">
             <div class="container">
                 <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h3>Rebus Pro is:</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="d-flex about-serv text-center align-items-center py-3">
                             <h3 class="shadow bg-primary icons-serv text-white rounded-pill me-3">
@@ -119,6 +139,14 @@
                                 <h5 class="title mb-0">Support agreement</h5>
                             </div>
                         </div><!--end about section-->
+                        <div>
+                            <p>
+                                <small>
+                                    Guarantee that bug fixing will begin within 24 hours,
+                                    should you discover a bug in one of the supported libraries.     
+                                </small>
+                            </p>
+                        </div>
                     </div><!--end col-->
                     
                     <div class="col-lg-4 col-md-6 col-12">
@@ -130,6 +158,14 @@
                                 <h5 class="title mb-0">FleetManager license 👆</h5>
                             </div>
                         </div><!--end about section-->
+                        <div>
+                            <p>
+                                <small>
+                                    License to use cloud-hosted Fleet Manager (with 10 GB monthly ingestion limit)
+                                    or self-hosted Fleet Manager (without any limitations).
+                                </small>
+                            </p>
+                        </div>
                     </div><!--end col-->
                     
                     <div class="col-lg-4 col-md-6 col-12">
@@ -141,20 +177,38 @@
                                 <h5 class="title mb-0">Private Slack channel</h5>
                             </div>
                         </div><!--end about section-->
+                        <div>
+                            <p>
+                                <small>
+                                    Access to private Slack channel for ad-hoc, code-centric 
+                                    discussions in relation to Rebus and the supported libraries.
+                                </small>
+                            </p>
+                        </div>
                     </div><!--end col-->
                 </div><!--end row-->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h3>by subscription</h3>
+                        </div>
+                    </div>
+                </div>
             </div><!--end container-->
         </section><!--end section-->
 
         <!-- Features Start -->
-        <section class="section overflow-hidden" id="service">
+        <section class="section overflow-hidden" id="fleet-manager">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12">
                         <div class="section-title text-center mb-4 pb-2">
-                            <h6 class="text-primary font-weight-normal mb-3">Work Process</h6>
-                            <h4 class="title mb-4">How It Works ?</h4>
-                            <p class="para-desc mx-auto text-muted mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap 5 html page.</p>
+                            <h2 class="text-primary font-weight-normal mb-3">
+                                Fleet Manager
+                            </h2>
+                            <p>
+                                Fleet Manager is the perfect tool to aid DevOps teams in running their Rebus-based workloads. 🚌
+                            </p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -164,12 +218,17 @@
                         <div class="feature position-relative text-center">
                             <div class="p-4 rounded position-relative overflow-hidden">
                                 <div class="icon text-primary">
-                                    <i class="uim uim-key-skeleton-alt"></i>
+                                    <!--<i class="uim uim-signal-alt-3"></i>-->
+                                    📈
                                     <img src="images/shape-1.png" class="avatar avatar-small icon-shape" alt="">
+                                    
                                 </div>
                                 <div class="content mt-4">
-                                    <h5><a href="javascript:void(0)" class="title text-dark">Create Account</a></h5>
-                                    <p class="text-muted">Due to its widespread use as filler text for layouts, non-readability is of great importance</p>
+                                    <h5><a href="javascript:void(0)" class="title text-dark">Collect Metrics</a></h5>
+                                    <p class="text-muted">
+                                        Fleet Manager <strong>collects metrics</strong> from each Rebus instance, visualizing the 
+                                        <strong>amount of work</strong> performed by each instance or grouped by queue name or machine name.
+                                    </p>
                                     <a href="javascript:void(0)" class="text-primary">Read More <i data-feather="chevron-right" class="fea icon-sm"></i></a>
                                 </div>
                             </div>
@@ -180,12 +239,16 @@
                         <div class="feature position-relative text-center">
                             <div class="p-4 rounded position-relative overflow-hidden">
                                 <div class="icon text-primary">
-                                    <i class="uim uim-signal-alt-3"></i>
+                                    <!--<i class="uim uim-fast-mail"></i>-->
+                                    💀
                                     <img src="images/shape-1.png" class="avatar avatar-small icon-shape" alt="">
                                 </div>
                                 <div class="content mt-4">
-                                    <h5><a href="javascript:void(0)" class="title text-dark">Data Analysis</a></h5>
-                                    <p class="text-muted">Due to its widespread use as filler text for layouts, non-readability is of great importance</p>
+                                    <h5><a href="javascript:void(0)" class="title text-dark">Handle Failed Messages</a></h5>
+                                    <p class="text-muted">
+                                        Fleet Manager <strong>replaces dead-letter queues</strong>, so failed messages are centrally stored. Inspect
+                                        message bodies, exception details, and <strong>re-deliver them to any queue</strong> without leaving Fleet Manager!
+                                    </p>
                                     <a href="javascript:void(0)" class="text-primary">Read More <i data-feather="chevron-right" class="fea icon-sm"></i></a>
                                 </div>
                             </div>
@@ -196,12 +259,16 @@
                         <div class="feature position-relative text-center">
                             <div class="p-4 rounded position-relative overflow-hidden">
                                 <div class="icon text-primary">
-                                    <i class="uim uim-flip-v"></i>
+                                    <!--<i class="uim uim-flip-v"></i>-->
+                                    🔎
                                     <img src="images/shape-1.png" class="avatar avatar-small icon-shape" alt="">
                                 </div>
                                 <div class="content mt-4">
-                                    <h5><a href="javascript:void(0)" class="title text-dark">Show Result</a></h5>
-                                    <p class="text-muted">Due to its widespread use as filler text for layouts, non-readability is of great importance</p>
+                                    <h5><a href="javascript:void(0)" class="title text-dark">Advanced Debugging</a></h5>
+                                    <p class="text-muted">
+                                        Messaging-based systems are often harder to debug. Fleet Manager helps developers get valuable insights
+                                        by recording and visualizing saga state changes and optionally enabling message auditing.
+                                    </p>
                                     <a href="javascript:void(0)" class="text-primary">Read More <i data-feather="chevron-right" class="fea icon-sm"></i></a>
                                 </div>
                             </div>
@@ -210,13 +277,40 @@
                 </div><!--end row-->
             </div><!--end container-->
 
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title mb-4">How to get started?</h4>
+                        <p class="para-desc mx-auto text-muted mb-0">
+                            Simply connect your bus instances to Fleet Manager using the NuGet package
+                        </p>
+                        <p style="padding-top: 0.7em">
+                            <a href="https://www.nuget.org/packages/Rebus.FleetManager/" target="_blank">
+                                <img alt="Nuget" src="https://img.shields.io/nuget/v/rebus.fleetmanager?label=Rebus.FleetManager&style=for-the-badge">
+                            </a>
+                        </p>
+                        <p class="para-desc mx-auto text-muted mb-0">
+                            and the configuration
+                        </p>
+                        <p>
+                            <code class="code-sample">.Options(o => o.EnableFleetManager(...))</code>
+                        </p>
+                        <p class="para-desc mx-auto text-muted mb-0">
+                            and then your bus instance will enlist itself in your fleet. 🚌🎉
+                        </p>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
             <div class="container mt-100 mt-60">
                 <div class="row justify-content-center">
                     <div class="col-12">
                         <div class="section-title text-center">
-                            <h6 class="text-primary font-weight-normal mb-3">Features</h6>
-                            <h4 class="title mb-4">What We Do ?</h4>
-                            <p class="text-muted para-desc mx-auto mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap 5 html page.</p>
+                            <!--<h6 class="text-primary font-weight-normal mb-3">Features</h6>-->
+                            <h4 class="title mb-4">Features</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">
+                                Here's a selection of the features available in Fleet Manager:
+                            </p>
                         </div>
                     </div><!--end dol-->
                 </div><!--end row-->
@@ -226,21 +320,35 @@
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="feature position-relative">
-                            <img src="images/saas/features-1.png" class="img-fluid" alt="">
+                            <img src="images/fleet-manager-1.png" class="img-fluid" alt="">
                         </div>
                     </div><!--end col-->
 
                     <div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <div class="section-title">
-                            <h5 class="title mb-4">Perfect Solution for <br> Your Dashboard</h5>
-                            <p class="text-muted para-desc">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap 5 html page.</p>
+                            <h5 class="title mb-4">
+                                See what's cooking
+                            </h5>
+                            <p class="text-muted para-desc">
+                                View realtime dashboards of message processing activity, grouped by instance, queue name, or machine name.
+                            </p>
                             <ul class="list-unstyled">
-                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Digital Marketing Solutions for Tomorrow</li>
-                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Our Talented & Experienced Marketing Agency</li>
-                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Create your own skin to match your brand</li>
+                                <li class="mt-2">
+                                    <i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>
+                                    <strong>Is it alive?</strong> Status lights indicate whether instance/queue/machine has seen recent
+                                    activity or has recently sent a heartbeat signal.
+                                </li>
+                                <li class="mt-2">
+                                    <i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>
+                                    <strong>Is it working?</strong> Handled messages are visualized as 
+                                    <span style="background-color: #5d8">greenish (OK)</span>, 
+                                    <span style="background-color: #ff3">yellow (exception was caught)</span>,
+                                    or 
+                                    <span style="background-color: #e43; color: #fff">red (message was dead-lettered in Fleet Manager)</span>.
+                                </li>
                             </ul>
                             <div class="mt-4">
-                                <a href="javascript:void(0)" class="btn btn-primary">Get Started</a>
+                                <!--<a href="javascript:void(0)" class="btn btn-primary">Get Started</a>-->
                             </div>
                         </div>
                     </div><!--end col-->
@@ -251,30 +359,126 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 order-1 order-md-2">
                         <div class="feature position-relative">
-                            <img src="images/saas/features-2.png" class="img-fluid d-block mx-auto" alt="">
+                            <img src="images/fleet-manager-11.png" class="img-fluid d-block mx-auto" alt="">
                         </div>
                     </div><!--end col-->
 
                     <div class="col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <div class="section-title">
-                            <h5 class="title mb-4">Built The Dashboard <br> That Everyone Love.</h5>
-                            <p class="text-muted para-desc">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap 5 html page.</p>
+                            <h5 class="title mb-4">
+                                See what went wrong
+                            </h5>
+                            <p class="text-muted para-desc">
+                                Fleet Manager completely replaces your ordinary dead-letter queues, thus letting you handle the entire workflow
+                                around failures in the comfort of its simple Failed Messages dashboard.
+                            </p>
                             <ul class="list-unstyled">
-                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Digital Marketing Solutions for Tomorrow</li>
-                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Our Talented & Experienced Marketing Agency</li>
-                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Create your own skin to match your brand</li>
+                                <li class="mt-2">
+                                    <i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>
+                                    <strong>Search and filter failed messages</strong> by message type, exception type, etc.
+                                </li>
+                                <li class="mt-2">
+                                    <i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>
+                                    <strong>Tag/untag messages</strong> to implement a simple workflow around how they should be handled (e.g. by tagging
+                                    a bunch of them with <code>Retry when BUG123 has been fixed</code>)
+                                </li>
+                                <li class="mt-2">
+                                    <i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>
+                                    <strong>Re-deliver messages to their source queues</strong> or to any other queue known by Fleet Manager. ✅
+                                </li>
                             </ul>
                             <div class="watch-video mt-4">
+                                <!--
                                 <a href="javascript:void(0)" class="btn btn-primary mb-2 me-2">Read More</a>
                                 <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#watchvideomodal" class="video-play-icon watch title-dark text-dark mb-2"><i class="mdi mdi-play play-icon-circle text-center d-inline-block me-2 rounded-pill text-white title-dark position-relative play play-iconbar"></i> Watch Now</a>
+                                -->
                             </div>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
+
+            <div class="container mt-100 mt-60">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="feature position-relative">
+                            <img src="images/fleet-manager-12.png" class="img-fluid" alt="">
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title">
+                            <h5 class="title mb-4">
+                                Inspect message bodies
+                            </h5>
+                            <p class="text-muted para-desc">
+                                Since failed messages are stored in Fleet Manager, it's possible to inspect their message bodies.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="mt-2">
+                                    <i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>
+                                    <strong>Does it look right?</strong> 
+                                    Messages serialized as JSON or XML can be decoded by Fleet Manager, thus making it possible for you
+                                    to inspect the failed message payloads.
+                                </li>
+                                <li class="mt-2">
+                                    <i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>
+                                    <strong>How about the headers?</strong> 
+                                    A tab in the message details dialog shows all headers attached to the message.
+                                </li>
+                                <li class="mt-2">
+                                    <i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>
+                                    <strong>But what happened?</strong> 
+                                    The last tab in the message details dialog shows all of the exception details
+                                    collected by Fleet Manager.
+                                </li>
+                            </ul>
+                            <div class="mt-4">
+                                <!--<a href="javascript:void(0)" class="btn btn-primary">Get Started</a>-->
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container mt-100 mt-60">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-1 order-md-2">
+                        <div class="feature position-relative">
+                            <img src="images/fleet-manager-13.png" class="img-fluid d-block mx-auto" alt="">
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title">
+                            <h5 class="title mb-4">
+                                Formulate a diagnosis
+                            </h5>
+                            <p class="text-muted para-desc">
+                                Upon inspecting the full exception details of all of the caught exceptions, it should
+                                be possible to understand why the message could not be handled.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="mt-2">
+                                    <i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>
+                                    <strong>Exception details</strong> with nifty .NET stacktrace hightlighing.
+                                </li>
+                            </ul>
+                            <div class="watch-video mt-4">
+                                <!--
+                                <a href="javascript:void(0)" class="btn btn-primary mb-2 me-2">Read More</a>
+                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#watchvideomodal" class="video-play-icon watch title-dark text-dark mb-2"><i class="mdi mdi-play play-icon-circle text-center d-inline-block me-2 rounded-pill text-white title-dark position-relative play play-iconbar"></i> Watch Now</a>
+                                -->
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        
         </section><!--end section-->
         <!-- Features End -->
 
+        
         <!-- Pricing Start -->
         <section class="section bg-light" id="pricing">
             <div class="container">
