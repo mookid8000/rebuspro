@@ -547,35 +547,51 @@
                                 Available pricing plans
                             </h2>
                             <p class="text-muted para-desc mx-auto mb-0">
-                                Become a Rebus Pro subscriber now and take your Rebus experience to the next level.
+                                Become a Rebus Pro subscriber now and take your Rebus experience to the next level.<br/>
+                                <strong>
+                                    ⭐Pay less often to get up to 20% discount.⭐
+                                </strong>
                             </p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
 
                 <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-6">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="paymentfrequency" id="paymentfrequency_monthly">
-                            <label class="form-check-label" for="paymentfrequency_monthly">
-                              Monthly
-                            </label>
+                    <ul class="nav nav-tabs nav-fill" id="paymentFrequencyTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="monthly_payment_tab" data-bs-toggle="tab" data-bs-target="#monthly_payment" type="button" role="tab" aria-controls="monthly_payment" aria-selected="false">
+                                Monthly
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="quarterly_payment_tab" data-bs-toggle="tab" data-bs-target="#quarterly_payment" type="button" role="tab" aria-controls="quarterly_payment" aria-selected="false">
+                                Quarterly (–8%)
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="biannual_payment_tab" data-bs-toggle="tab" data-bs-target="#biannual_payment" type="button" role="tab" aria-controls="biannual_payment" aria-selected="true">
+                                ⭐ Every 6 months (–20%) ⭐
+                            </button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade" id="monthly_payment" role="tabpanel" aria-labelledby="monthly_payment_tab">
+                            <div class="container">
+                                MONTHLY
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="paymentfrequency" id="paymentfrequency_quarterly">
-                            <label class="form-check-label" for="paymentfrequency_quarterly">
-                              Quarterly (8% discount)
-                            </label>
+                        <div class="tab-pane fade" id="quarterly_payment" role="tabpanel" aria-labelledby="quarterly_payment_tab">
+                            <div class="container">
+                                QUARTERLY
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="paymentfrequency" id="paymentfrequency_biannually" checked>
-                            <label class="form-check-label" for="paymentfrequency_biannually">
-                              Every 6 months (20% discount)
-                            </label>
+                        <div class="tab-pane fade show active" id="biannual_payment" role="tabpanel" aria-labelledby="biannual_payment_tab">
+                            <div class="container">
+                                EVERY 6 MONTHS
+                            </div>
                         </div>
                     </div>
-                    <div class="col-3"></div>
                 </div>
 
                 <div class="row align-items-center">
