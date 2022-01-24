@@ -1318,15 +1318,13 @@
             document.addEventListener("DOMContentLoaded", function(event) {
                 let hash = window.location.hash;
                 
-                console.log("hash", hash);
+                if (hash.length > 1 & hash != "#home") return;
 
-                if (hash.length < 2 || hash == "#home") {
-                    let elem = document.getElementById("simple-email");
+                let elem = document.getElementById("simple-email");
 
-                    setTimeout(function() {
-                        elem.focus();
-                    }, 100);
-                }
+                setTimeout(function() {
+                    elem.focus();
+                }, 100);
             });
         </script>
     </body>
