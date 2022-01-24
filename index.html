@@ -40,8 +40,8 @@
             <div class="container">
                 <!-- Logo container-->
                 <div>
-                    <a class="logo" href="index.html">
-                        <img src="images/logo3-320.png" height="30" alt="">
+                    <a class="logo" href="/">
+                        <img src="images/logo3-320.png" height="30" alt="Rebus FM logo">
                     </a>
                 </div>                 
                 <div class="buy-button" style="padding:0">
@@ -77,12 +77,6 @@
                             <a href="#pricing">Pricing</a>
                         </li>
                         <li class="has-submenu">
-                            <a href="#review">Testimonial</a>
-                        </li>
-                        <li class="has-submenu">
-                            <a href="#blogs">Blog & News</a>
-                        </li>
-                        <li class="has-submenu">
                             <a href="#contact">Contact</a>
                         </li>
                     </ul><!--end navigation menu-->
@@ -107,8 +101,8 @@
                                 <div class="text-center subcribe-form mt-4 pt-2 position-relative">
                                     <form>
                                         <div class="form-group mb-0">
-                                            <input type="email" id="email" name="email" class="rounded-pill shadow" placeholder="you@wherever.com">
-                                            <button type="submit" class="btn btn-pills btn-primary">Get in touch</button>
+                                            <input type="email" id="simple-email" name="email" class="rounded-pill shadow" placeholder="you@wherever.com">
+                                            <button id="simple-contact" type="submit" class="btn btn-pills btn-primary">Contact me</button>
                                         </div>
                                     </form><!--end form-->
                                 </div><!--end subscribe form-->
@@ -1010,7 +1004,7 @@
                     </div>
                     <div class="col-4">
                         <div class="pricing text-center rounded overflow-hidden shadow">
-                            <div class="price-header bg-dark pt-2 pb-2">
+                            <div class="price-header bg-secondary pt-2 pb-2">
                                 <h5 class="price-title text-white">Trial</h5>
                                 <p class="mb-0 text-white-50">Just looking</p>
                             </div>
@@ -1029,7 +1023,7 @@
                                     <a href="#" data-signupperino="trial" class="btn btn-dark">Signup</a>
                                 </div>
                             </div>    
-        </div>
+                        </div>
                     </div>
                     <div class="col-4">
                     </div>
@@ -1040,39 +1034,43 @@
                 <div class="row">
                     <div class="col-md-6 col-12">
                         <div class="faq-container">
-                            <h6 class="question"><i data-feather="help-circle" class="fea icon-ex-md text-primary me-2"></i> How our <span class="text-primary">Appdesk</span> work ?</h6>
-                            <p class="answer text-muted mt-3 mb-0">Due to its widespread use as filler text for layouts, non-readability is of great importance: human perception is tuned to recognize certain patterns and repetitions in texts.</p>
+                            <h6 class="question"><i data-feather="help-circle" class="fea icon-ex-md text-primary me-2"></i> 
+                                What does <span class="text-primary">Trial</span> give me?
+                            </h6>
+                            <p class="answer text-muted mt-3 mb-0">
+                                The Trial is just an opportunity to check out Fleet Manager and connect a few Rebus instances
+                                to it. It's fully functional, but data is sometimes wiped from it, making it unsuitable for
+                                any real uses besides trying it. 
+                            </p>
                         </div>
                     </div><!--end col-->
-                    
-                    <div class="col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+
+                    <div class="col-md-6 col-12">
                         <div class="faq-container">
-                            <h6 class="question"><i data-feather="help-circle" class="fea icon-ex-md text-primary me-2"></i> What is the main process open account ?</h6>
-                            <p class="answer text-muted mt-3 mb-0">If the distribution of letters and 'words' is random, the reader will not be distracted from making a neutral judgement on the visual impact</p>
+                            <h6 class="question"><i data-feather="help-circle" class="fea icon-ex-md text-primary me-2"></i> 
+                                What's this thing about the <span class="text-primary">billing frequency?</span>
+                            </h6>
+                            <p class="answer text-muted mt-3 mb-0">
+                                Since less frequent billing gives less administration and a longer commitment, it's
+                                rewarded with a discount. You can get up to 20% with the plans mentioned, but if your needs
+                                are beyond the mentioned quotas, you might get an even bigger discount.
+                            </p>
                         </div>
                     </div><!--end col-->
-                    
-                    <div class="col-md-6 col-12 mt-4 pt-2">
-                        <div class="faq-container">
-                            <h6 class="question"><i data-feather="help-circle" class="fea icon-ex-md text-primary me-2"></i> How to make unlimited data entry ?</h6>
-                            <p class="answer text-muted mt-3 mb-0">Furthermore, it is advantageous when the dummy text is relatively realistic so that the layout impression of the final publication is not compromised.</p>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-md-6 col-12 mt-4 pt-2">
-                        <div class="faq-container">
-                            <h6 class="question"><i data-feather="help-circle" class="fea icon-ex-md text-primary me-2"></i> Is <span class="text-primary">Appdesk</span> safer to use with my account ?</h6>
-                            <p class="answer text-muted mt-3 mb-0">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin.</p>
-                        </div>
-                    </div><!--end col-->
+
                 </div><!--end row-->
 
                 <div class="row mt-md-5 pt-md-3 mt-4 pt-2 justify-content-center">
                     <div class="col-12 text-center">
                         <div class="section-title">
-                            <h4 class="title mb-4">Have Question ? Get in touch!</h4>
-                            <p class="text-muted para-desc mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap 5 html page.</p>
-                            <a href="#contact" class="btn btn-primary mt-4 scroll-down"><i class="mdi mdi-phone"></i> Contact us</a>
+                            <h4 class="title mb-4">Do you have a question? Get in touch!</h4>
+                            <p class="text-muted para-desc mx-auto">
+                                Interested in hearing more about what Rebus Pro can give you? Or curious about
+                                anything Rebus-related, or just want to say hello? 🙂 
+                            </p>
+                            <a href="#contact" class="btn btn-primary mt-4 scroll-down"><i class="mdi mdi-message"></i> 
+                                Get in touch
+                            </a>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -1087,180 +1085,17 @@
         </div>
         <!-- Pricing End -->
 
-        <!-- Testimonial Start -->
-        <section class="section" id="review">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center mb-4 pb-2">
-                            <h4 class="title mb-4">Happy Client's</h4>
-                            <p class="text-muted para-desc mx-auto mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap 5 html page.</p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row">
-                    <div class="col-12 mt-4">
-                        <div class="tiny-three-item">
-                            <div class="tiny-slide">
-                                <div class="customer-testi m-1">
-                                    <div class="content p-3 shadow rounded bg-white position-relative">
-                                        <ul class="list-unstyled mb-0 text-warning">
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        </ul>
-                                        <p class="text-muted mt-2">" According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero Launch your campaign and benefit from our expertise. "</p>
-                                    </div>
-                                    <div class="d-flex mt-3 align-items-center">
-                                        <img src="images/client/01.jpg" class="avatar avatar-small me-3 rounded shadow" alt="">
-                                        <p class="text-primary mb-0">- Calvin Carlo <small class="text-muted d-block ms-2">Manager</small></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tiny-slide">
-                                <div class="customer-testi m-1">
-                                    <div class="content p-3 shadow rounded bg-white position-relative">
-                                        <ul class="list-unstyled mb-0 text-warning">
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        </ul>
-                                        <p class="text-muted mt-2">" According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero Launch your campaign and benefit from our expertise. "</p>
-                                    </div>
-                                    <div class="d-flex mt-3 align-items-center">
-                                        <img src="images/client/02.jpg" class="avatar avatar-small me-3 rounded shadow" alt="">
-                                        <p class="text-primary mb-0">- Christa Smith <small class="text-muted d-block ms-2">Manager</small></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tiny-slide">
-                                <div class="customer-testi m-1">
-                                    <div class="content p-3 shadow rounded bg-white position-relative">
-                                        <ul class="list-unstyled mb-0 text-warning">
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        </ul>
-                                        <p class="text-muted mt-2">" According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero Launch your campaign and benefit from our expertise. "</p>
-                                    </div>
-                                    <div class="d-flex mt-3 align-items-center">
-                                        <img src="images/client/03.jpg" class="avatar avatar-small me-3 rounded shadow" alt="">
-                                        <p class="text-primary mb-0">- Jemina CLone <small class="text-muted d-block ms-2">Manager</small></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tiny-slide">
-                                <div class="customer-testi m-1">
-                                    <div class="content p-3 shadow rounded bg-white position-relative">
-                                        <ul class="list-unstyled mb-0 text-warning">
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        </ul>
-                                        <p class="text-muted mt-2">" According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero Launch your campaign and benefit from our expertise. "</p>
-                                    </div>
-                                    <div class="d-flex mt-3 align-items-center">
-                                        <img src="images/client/04.jpg" class="avatar avatar-small me-3 rounded shadow" alt="">
-                                        <p class="text-primary mb-0">- Smith Vodka <small class="text-muted d-block ms-2">Manager</small></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tiny-slide">
-                                <div class="customer-testi m-1">
-                                    <div class="content p-3 shadow rounded bg-white position-relative">
-                                        <ul class="list-unstyled mb-0 text-warning">
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        </ul>
-                                        <p class="text-muted mt-2">" According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero Launch your campaign and benefit from our expertise. "</p>
-                                    </div>
-                                    <div class="d-flex mt-3 align-items-center">
-                                        <img src="images/client/05.jpg" class="avatar avatar-small me-3 rounded shadow" alt="">
-                                        <p class="text-primary mb-0">- Cristino Murfi <small class="text-muted d-block ms-2">Manager</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </section><!--end section-->
-        <!-- Testimonial End -->
-
-        <!-- Start Blog  -->
-        <section class="section bg-light" id="blogs">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center mb-4 pb-2">
-                            <h4 class="title mb-4">Latest Blogs or News</h4>
-                            <p class="text-muted para-desc mx-auto mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap 5 html page.</p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card blog-post border-0 rounded overflow-hidden shadow">
-                            <img src="images/blog/01.jpg" class="img-fluid" alt="missing-image">
-                            <div class="card-body p-4">
-                                <h5 class="mb-3"><a href="javascript:void(0)" class="text-dark title">Install Tinc and VPN Setup on Debian & Ubuntu</a></h5>
-                                <p class="text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="text-primary h6">Read More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card blog-post border-0 rounded overflow-hidden shadow">
-                            <img src="images/blog/02.jpg" class="img-fluid" alt="missing-image">
-                            <div class="card-body p-4">
-                                <h5 class="mb-3"><a href="javascript:void(0)" class="text-dark title">Responsive & Mobile Design</a></h5>
-                                <p class="text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="text-primary h6">Read More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card blog-post border-0 rounded overflow-hidden shadow">
-                            <img src="images/blog/03.jpg" class="img-fluid" alt="missing-image">
-                            <div class="card-body p-4">
-                                <h5 class="mb-3"><a href="javascript:void(0)" class="text-dark title">Initial Server Configuration & Setup on Debian</a></h5>
-                                <p class="text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="text-primary h6">Read More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </section><!--end section-->
-        <!-- End Blog  -->
-
-        <!-- Start Contact -->
+             <!-- Start Contact -->
         <section class="section" id="contact">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12">
                         <div class="section-title text-center mb-4 pb-2">
-                            <h4 class="title mb-4">Get in touch !</h4>
-                            <p class="text-muted para-desc mx-auto mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap 5 html page.</p>
+                            <h2 class="title mb-4">Get in touch !</h2>
+                            <p class="text-muted para-desc mx-auto mb-0">
+                                Fill out the form below to get in touch. There's no commitment of any kind,
+                                please feel free to ask about anything (preferably Rebus-related 🙂).
+                            </p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -1268,7 +1103,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 order-md-1 order-2 mt-md-5 mt-4 pt-2">
                         <div class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" style="border:0" class="rounded" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.07926888836!2d9.846090216436144!3d55.86129108058241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c630448b7e447%3A0x4b7170d1802dea0d!2sRebus%20FM%20ApS!5e0!3m2!1sda!2sdk!4v1643053079643!5m2!1sda!2sdk" style="border:0" class="rounded" allowfullscreen></iframe>
                         </div>
                     </div><!--end col-->
 
@@ -1309,7 +1144,9 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="d-grid">
-                                            <button type="submit" id="submit" name="send" class="btn btn-primary">Send Message</button>
+                                            <button type="submit" id="submit-message" name="send" class="btn btn-primary">
+                                                Send message <i class="mdi mdi-message"></i> 
+                                            </button>
                                         </div>
                                     </div><!--end col-->
                                 </div><!--end row-->
@@ -1327,15 +1164,23 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-7 mb-3">
                         <div class="text-center">
-                            <a class="logo logo-footer" href="#">
-                                <img src="images/logo-light.png" height="22" alt="">
+                            <a class="logo logo-footer" href="https://rebus.fm" target="_blank">
+                                <img src="images/logo3-320.png" height="62" alt="Rebus FM">
                             </a>
-                            <p class="text-muted para-desc mx-auto mt-3">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap 5 html page.</p>
+                            <p class="text-muted para-desc mx-auto mt-3">
+                                Copyright ©️ 2022 Rebus FM ApS
+                            </p>
                             <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                                <li class="list-inline-item">
+                                    <a href="https://twitter.com/rebusfm" target="_blank" class="rounded">
+                                        <i data-feather="twitter" class="fea icon-sm fea-social"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.linkedin.com/company/rebus-fm" target="_blank" class="rounded">
+                                        <i data-feather="linkedin" class="fea icon-sm fea-social"></i>
+                                    </a>
+                                </li>
                             </ul><!--end icon-->
                         </div>
                     </div><!--end col-->
@@ -1347,42 +1192,7 @@
             </a>
             <!-- Back to top -->
         </footer><!--end footer-->
-        <footer class="footer-bar bg-dark">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <p class="mb-0 footer-text para-desc mx-auto">© <script>document.write(new Date().getFullYear())</script> <span class="text-reset">Appdesk</span>. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="http://shreethemes.in" target="_blank" class="text-reset">Shreethemes</a>.</p>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </footer><!--end footer-->
-        <!-- Footer End -->
-
-        <!-- Video Popup Start -->
-        <div class="modal fade" id="watchvideomodal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content video-modal rounded overflow-hidden">
-                    <!-- <video class="w-100" controls autoplay muted loop>
-                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> -->
-                        <!--Browser does not support <video> tag -->
-                    <!-- </video> -->
-                    <!--If you want to use your own video please set your files path-->
-
-
-                    <!-- <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/jNTZpfXYJa4?rel=0" title="YouTube video" allowfullscreen></iframe>
-                    </div> -->
-                    <!--If you want to use the youtube link please try the above code-->
-
-                    <div class="ratio ratio-16x9">
-                        <iframe src="http://player.vimeo.com/video/99025203" title="Vimeo video" allowfullscreen></iframe>
-                    </div>
-                    <!--If you want to use the Vimeo link please try the above code-->
-                </div>
-            </div>
-        </div>
-        <!-- Video Popup End -->
-        
+    
         <!-- javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/gumshoe.polyfills.min.js"></script>
@@ -1397,7 +1207,7 @@
         <!-- Main Js -->
         <script src="js/app.js"></script>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
         <script>
             let subjects = {
@@ -1416,10 +1226,40 @@
                 "trial": "Trial"
             };
 
+            function sendEmail(name, email, subject, message, success) {
+                let json = JSON.stringify({
+                    Name: name,
+                    Email: email,
+                    Phone: "n/a",
+                    Message: "Subject: '" + subject + "', message: '" + message + "'"
+                });
+
+                console.info("posting form as JSON", json);
+
+                $.ajax({
+                    type: 'post',
+                    //url: 'http://localhost:7071/api/Function1',
+                    url: 'https://alley87-contact.azurewebsites.net/api/Function1?code=ya/DWbAiLP1xC5ON138WqAdKwqPxw0kCBWQv3AQujKZdmtMHwkoEEg==',
+                    dataType: 'json',
+                    data: json,
+                    contentType: 'application/json',
+                    success: function(data) {
+                        alert("Thanks for your message 🙂 You will hear from us soon.");
+                        success();
+                    },
+                    error: function(_, __, error) {
+                        console.error("Error posting contact form", error);
+
+                        alert("Oh no! - an error occurred!! ☹ We might not have received your message - please try again, or write an email to hello@rebus.fm.");
+                    }
+                });
+
+            }
+
             $(function() {
                 var buttons = $("a[data-signupperino]");
 
-                buttons.on("click", function() {
+                buttons.click(function() {
                     let id = $(this).data("signupperino");
                     let subject = subjects[id];
                     if (!subject) return;
@@ -1432,8 +1272,37 @@
                     return false;
                 })
 
-                console.info("buttons", buttons);
-            })
+                $("a[href='#contact']").click(function() {
+                    setTimeout(function() { $("input#name").focus(); }, 2000);
+                    return true;
+                });
+
+                $("#simple-contact").click(function(e) {
+                    e.preventDefault();
+
+                    let email = $("#simple-email").val();
+
+                    sendEmail("No name", email, "REBUS PRO: Quick-contact", "Please get back to me regarding Rebus Pro", function() {
+                        $("#simple-email").val("");
+                    });
+                });
+
+                $("#submit-message").click(function(e) {
+                    e.preventDefault();
+
+                    let name = $("#name").val();
+                    let email = $("#email").val();
+                    let subject = $("#subject").val();
+                    let comments = $("#comments").val();
+
+                    sendEmail(name, email, "REBUS PRO: " + subject, comments, function() {
+                        $("#name").val("");
+                        $("#email").val("");
+                        $("#subject").val("");
+                        $("#comments").val("");
+                    });
+                })
+            });
 
             document.addEventListener("DOMContentLoaded", function(event) {
                 let hash = window.location.hash;
@@ -1441,7 +1310,7 @@
                 console.log("hash", hash);
 
                 if (hash.length < 2 || hash == "#home") {
-                    let elem = document.getElementById("email");
+                    let elem = document.getElementById("simple-email");
 
                     setTimeout(function() {
                         elem.focus();
