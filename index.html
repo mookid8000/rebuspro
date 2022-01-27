@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
         <!-- Main css File -->
         <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8RRFLSZ76"></script>
@@ -358,7 +359,9 @@
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="feature position-relative">
-                            <img src="images/fleet-manager-1.png" class="img-fluid" alt="">
+                            <a class="img-popup" href="images/fleet-manager-1.png" title="This is the Queues Overview, which displays bus activity grouped by input queue.">
+                                <img src="images/fleet-manager-1.png" class="img-fluid" alt="">
+                            </a>
                         </div>
                     </div><!--end col-->
 
@@ -399,7 +402,9 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 order-1 order-md-2">
                         <div class="feature position-relative">
-                            <img src="images/fleet-manager-11.png" class="img-fluid d-block mx-auto" alt="">
+                            <a class="img-popup" href="images/fleet-manager-11.png" title="Here we see the Failed Messages overview, which is where dead-lettered messages end up in Fleet Manager.">
+                                <img src="images/fleet-manager-11.png" class="img-fluid d-block mx-auto" alt="">
+                            </a>
                         </div>
                     </div><!--end col-->
 
@@ -442,7 +447,9 @@
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="feature position-relative">
-                            <img src="images/fleet-manager-12.png" class="img-fluid" alt="">
+                            <a class="img-popup" href="images/fleet-manager-12.png" title="Clicking on a message opens a modal dialog with details about the message. The first tab will show the message payload, if it can be decoded into text.">
+                                <img src="images/fleet-manager-12.png" class="img-fluid" alt="">
+                            </a>
                         </div>
                     </div><!--end col-->
 
@@ -485,7 +492,9 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 order-1 order-md-2">
                         <div class="feature position-relative">
-                            <img src="images/fleet-manager-13.png" class="img-fluid d-block mx-auto" alt="">
+                            <a class="img-popup" href="images/fleet-manager-13.png" title="Another tab shows the full exception details captured by Fleet Manager.">
+                                <img src="images/fleet-manager-13.png" class="img-fluid d-block mx-auto" alt="">
+                            </a>
                         </div>
                     </div><!--end col-->
 
@@ -521,7 +530,9 @@
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="feature position-relative">
-                            <img src="images/fleet-manager-14.png" class="img-fluid" alt="">
+                            <a class="img-popup" href="images/fleet-manager-14.png" title="Fleet Manager captures saga state snapshots, which can be useful in debugging scenarios. Each state transition is visualized with the trigger message type and the resulting revision.">
+                                <img src="images/fleet-manager-14.png" class="img-fluid" alt="">
+                            </a>
                         </div>
                     </div><!--end col-->
 
@@ -1235,6 +1246,7 @@
         <script src="js/app.js"></script>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <script>
             let subjects = {
@@ -1282,6 +1294,24 @@
                 });
 
             }
+
+            $(function() {
+                $('.img-popup').magnificPopup({
+                    type: 'image',
+                    closeOnContentClick: true,
+                    closeBtnInside: false,
+                    fixedContentPos: false,
+                    mainClass: 'mfp-with-zoom', // class to remove default margin from left and right side
+                    image: {
+                        verticalFit: true        
+                    },
+                    zoom: {
+                        enabled: true,
+                        duration: 300 // don't foget to change the duration also in CSS
+                    }
+                });
+
+            });
 
             $(function() {
                 var buttons = $("a[data-signupperino]");
