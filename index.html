@@ -1265,7 +1265,28 @@
                 "trial": "Trial"
             };
 
+            function showEmailError(email) {
+                alert("Your email address '" + email + "' does not look right – please check it and try again.");
+            }
+
             function sendEmail(name, email, subject, message, success) {
+                if (!email) {
+                    showEmailError(email);
+                    return;                    
+                }
+                if (email.length < 4) {
+                    showEmailError(email);
+                    return;
+                }
+
+                let hasAt = email.indexOf("@") > 1;
+                let hasDot = email.indexOf(".") > hasAt;
+
+                if (!hasAt || !hasDot) {
+                    showEmailError(email);
+                    return;
+                }
+
                 let json = JSON.stringify({
                     Name: name,
                     Email: email,
