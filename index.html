@@ -1375,17 +1375,17 @@
                 //    Message: "Subject: '" + subject + "', message: '" + message + "'"
                 //});
 
-                let json = JSON.stringify({
-                    Name: "Rebus Pro page",
-                    Email: email,
-                    Text: `Name: ${name}, Subject: ${subject}, Message: ${message}`,
-                    Token: token
-                });
-
-                console.info("posting form as JSON", json);
-
                 grecaptcha.ready(function() {
                     grecaptcha.execute('6LdHfBglAAAAANgkmzTybGIvvwkRSCu2DQYGkV_X', {action: 'submit'}).then(function(token) {
+                        let json = JSON.stringify({
+                            Name: "Rebus Pro page",
+                            Email: email,
+                            Text: `Name: ${name}, Subject: ${subject}, Message: ${message}`,
+                            Token: token
+                        });
+
+                        console.info("posting form as JSON", json);
+
                         $.ajax({
                             type: 'post',
                             url: 'https://rebusfm-mailer-function.azurewebsites.net/api/SendMail?code=B9ztzOUvoEtPMIXmAQvbzkP7YpA3tK8H3HDk3L2TQ4ZmAzFuykFm1Q==',
