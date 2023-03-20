@@ -1327,6 +1327,7 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=6LdHfBglAAAAANgkmzTybGIvvwkRSCu2DQYGkV_X"></script>
 
         <script>
             let subjects = {
@@ -1367,33 +1368,42 @@
                     return;
                 }
 
+                //let json = JSON.stringify({
+                //    Name: name,
+                //    Email: email,
+                //    Phone: "n/a",
+                //    Message: "Subject: '" + subject + "', message: '" + message + "'"
+                //});
+
                 let json = JSON.stringify({
-                    Name: name,
+                    Name: "Rebus Pro page",
                     Email: email,
-                    Phone: "n/a",
-                    Message: "Subject: '" + subject + "', message: '" + message + "'"
+                    Text: `Name: ${name}, Subject: ${subject}, Message: ${message}`,
+                    Token: token
                 });
 
                 console.info("posting form as JSON", json);
 
-                $.ajax({
-                    type: 'post',
-                    //url: 'http://localhost:7071/api/Function1',
-                    url: 'https://alley87-contact2.azurewebsites.net/api/Function1?code=wozdx__T_tqHdmQ_46PDR6EZ4WEZOC0YwH0VcE6p4XUsAzFu1_-oOA==',
-                    dataType: 'json',
-                    data: json,
-                    contentType: 'application/json',
-                    success: function(data) {
-                        alert("Thanks for your message 🙂 You will hear from us soon.");
-                        success();
-                    },
-                    error: function(_, __, error) {
-                        console.error("Error posting contact form", error);
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('6LdHfBglAAAAANgkmzTybGIvvwkRSCu2DQYGkV_X', {action: 'submit'}).then(function(token) {
+                        $.ajax({
+                            type: 'post',
+                            url: 'https://rebusfm-mailer-function.azurewebsites.net/api/SendMail?code=B9ztzOUvoEtPMIXmAQvbzkP7YpA3tK8H3HDk3L2TQ4ZmAzFuykFm1Q==',
+                            dataType: 'json',
+                            data: json,
+                            contentType: 'application/json',
+                            success: function(data) {
+                                alert("Thanks for your message 🙂 You will hear from us soon.");
+                                success();
+                            },
+                            error: function(_, __, error) {
+                                console.error("Error posting contact form", error);
 
-                        alert("Oh no! - an error occurred!! ☹ We might not have received your message - please try again, or write an email to hello@rebus.fm.");
-                    }
+                                alert("Oh no! - an error occurred!! ☹ We might not have received your message - please try again, or write an email to hello@rebus.fm.");
+                            }
+                        });
+                    });
                 });
-
             }
 
             $(function() {
