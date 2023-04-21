@@ -38,6 +38,28 @@
 
         <script defer data-domain="pro.rebus.fm" src="https://plausible.io/js/script.js"></script>
     
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-833211405"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-833211405');
+
+            function gtag_report_conversion(url) {
+                var callback = function () {
+                    if (typeof(url) != 'undefined') {
+                        window.location = url;
+                    }
+                };
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-833211405/LuiACLyzr5IYEI2Yp40D',
+                    'event_callback': callback
+                });
+                return false;
+            }
+        </script>
+
     </head>
 
     <style type="text/css">
@@ -1394,6 +1416,7 @@
                             contentType: 'application/json',
                             success: function(data) {
                                 alert("Thanks for your message 🙂 You will hear from us soon.");
+                                gtag_report_conversion();
                                 success();
                             },
                             error: function(_, __, error) {
@@ -1500,6 +1523,7 @@
                     elem.focus();
                 }, 100);
             });
+
         </script>
     </body>
 </html>
